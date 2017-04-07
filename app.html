@@ -6,26 +6,26 @@
         <script src="app.js"></script>
     </head>
     <body class="container">
-        <!-- app.jsÇÃ .controller("AppController",function) Ç…ïRÇ√Ç≠ -->
+        <!-- app.js„ÅÆ .controller("AppController",function) „Å´Á¥ê„Å•„Åè -->
         <div ng-controller="AppController">
             <div>
-                <h1>ìoò^ÉtÉHÅ[ÉÄ</h1>
-                <!-- $scope.submitÇ™é¿çsÇ≥ÇÍÇÈ -->
+                <h1>ÁôªÈå≤„Éï„Ç©„Éº„É†</h1>
+                <!-- $scope.submit„ÅåÂÆüË°å„Åï„Çå„Çã -->
                 <form ng-submit="submit()">
                     <div class="form-group">
-                        <label for="username">ÉÜÅ[ÉUÅ[ñº</label>
+                        <label for="username">„É¶„Éº„Ç∂„ÉºÂêç</label>
                         <!-- $scope.username -->
-                        <input type="text" class="form-control" id="username" placeholder="twitterÇÃÉÜÅ[ÉUÅ[ñºÇì¸óÕ" ng-model="username">
+                        <input type="text" class="form-control" id="username" placeholder="twitter„ÅÆ„É¶„Éº„Ç∂„ÉºÂêç„ÇíÂÖ•Âäõ" ng-model="username">
                     </div>
-                    <button type="submit" class="btn btn-primary">ìoò^</button>
+                    <button type="submit" class="btn btn-primary">ÁôªÈå≤</button>
                 </form>
             </div>
             <hr>
             <div>
-                <h1>ÉÜÅ[ÉUÅ[àÍóó</h1>
+                <h1>„É¶„Éº„Ç∂„Éº‰∏ÄË¶ß</h1>
                 <ul>
-                    <!-- åJÇËï‘ÇµÇΩÇ¢É^ÉOÇ…ëŒÇµÇƒng-repeatÇégÇ§ -->
-                    <!-- $scope.users ÇÃ ÇªÇÍÇºÇÍÇÃóvëfÇ user Ç…äiî[ÇµÇƒÇ¢Ç≠ -->
+                    <!-- Áπ∞„ÇäËøî„Åó„Åü„ÅÑ„Çø„Ç∞„Å´ÂØæ„Åó„Å¶ng-repeat„Çí‰Ωø„ÅÜ -->
+                    <!-- $scope.users „ÅÆ „Åù„Çå„Åû„Çå„ÅÆË¶ÅÁ¥†„Çí user „Å´Ê†ºÁ¥ç„Åó„Å¶„ÅÑ„Åè -->
                     <li style="padding: 5px" ng-repeat="user in users">
                         <div>
                             <a href="{{user.url}}" target="_blank">{{user.username}}</a>
