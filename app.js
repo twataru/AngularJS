@@ -4,7 +4,7 @@ angular.module( "myapp", [] )
             $scope.users = [];
             //ng-submit="submit()"
             $scope.submit = function(){
-                $scope.users.push( function(){
+                $scope.users.push({
                     username : $scope.username,
                     url:'//twitter.com/' + $scope.username
                 } );
